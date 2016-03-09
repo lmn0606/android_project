@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.personal.liumn.nightcat.LoginActivity">
+    tools:context="com.personal.liumn.nightcat.LoginActivity"
+    android:background="#222222">
+
 
     <com.ogaclejapan.smarttablayout.SmartTabLayout
         android:id="@+id/viewpagertab"
@@ -15,8 +17,8 @@
         app:stl_indicatorInFront="false"
         app:stl_indicatorInterpolation="smart"
         app:stl_indicatorGravity="bottom"
-        app:stl_indicatorColor="#40C4FF"
-        app:stl_indicatorThickness="4dp"
+        app:stl_indicatorColor="#22a138"
+        app:stl_indicatorThickness="2dp"
         app:stl_indicatorWidth="auto"
         app:stl_indicatorCornerRadius="2dp"
         app:stl_overlineColor="#4D000000"
@@ -27,15 +29,15 @@
         app:stl_dividerThickness="1dp"
         app:stl_defaultTabBackground="?attr/selectableItemBackground"
         app:stl_defaultTabTextAllCaps="true"
-        app:stl_defaultTabTextColor="#FC000000"
+        app:stl_defaultTabTextColor="#22a138"
         app:stl_defaultTabTextSize="12sp"
-        app:stl_defaultTabTextHorizontalPadding="16dp"
+        app:stl_defaultTabTextHorizontalPadding="30dp"
         app:stl_defaultTabTextMinWidth="0dp"
         app:stl_distributeEvenly="false"
         app:stl_clickable="true"
-        app:stl_titleOffset="24dp"
+        app:stl_titleOffset="auto_center"
         app:stl_drawDecorationAfterTab="false"
-        />
+        android:background="#313d34" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
@@ -43,6 +45,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/viewpagertab"
         />
+
 
 
 </RelativeLayout>

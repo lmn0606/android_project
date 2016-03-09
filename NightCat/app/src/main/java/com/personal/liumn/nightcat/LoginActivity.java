@@ -28,10 +28,6 @@ public class LoginActivity extends AppCompatActivity {
         SmartTabLayout viewPagerTab = (SmartTabLayout) findViewById(R.id.viewpagertab);
         viewPagerTab.setViewPager(viewPager);
 
-        /**
-         * Error:Execution failed for task ':app:transformClassesWithDexForDebug'.
-         > com.android.build.api.transform.TransformException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command 'D:\Java\jdk1.7.0_71\bin\java.exe'' finished with non-zero exit value 2
-         */
 
     }
 }
