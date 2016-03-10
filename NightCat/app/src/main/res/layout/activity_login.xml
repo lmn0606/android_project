@@ -37,7 +37,7 @@
         app:stl_clickable="true"
         app:stl_titleOffset="auto_center"
         app:stl_drawDecorationAfterTab="false"
-        android:background="#313d34" />
+        android:background="#2b2b2b" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

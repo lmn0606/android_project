@@ -8,6 +8,8 @@ import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 import com.personal.liumn.fragment.PageFragment;
+import com.personal.liumn.fragment.StartFragment;
+import com.personal.liumn.utils.ScreenUtils;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -21,10 +23,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private void init_tab_view()
     {
+        ScreenUtils.init_screen_info(this);
+
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
-                .add("1111", PageFragment.class)
-                .add("2222", PageFragment.class)
+                .add(R.string.start_fragment, StartFragment.class)
+                .add("222211111", PageFragment.class)
                 .create());
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
