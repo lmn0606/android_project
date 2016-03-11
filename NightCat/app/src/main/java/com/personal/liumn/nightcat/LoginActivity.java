@@ -9,9 +9,12 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 import com.personal.liumn.fragment.PageFragment;
 import com.personal.liumn.fragment.StartFragment;
+import com.personal.liumn.service.NightCatService;
 import com.personal.liumn.utils.ScreenUtils;
 
 public class LoginActivity extends AppCompatActivity {
+
+    private NightCatService nccService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
                 .add(R.string.start_fragment, StartFragment.class)
-                .add("222211111", PageFragment.class)
+                .add("Test", PageFragment.class)
                 .create());
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
