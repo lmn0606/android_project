@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     tools:context="com.personal.liumn.fragment.StartFragment">
 
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--
         <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/btn_spotify"
             android:layout_width="wrap_content"
@@ -28,6 +28,117 @@
             fancy:fb_radius="30dp"
             fancy:fb_text="SHUFFLE PLAY"
             fancy:fb_textColor="#FFFFFF" />
+        -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:textColor="#00be0d"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:textColor="#00be0d"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_gravity="center_horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:gravity="center">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                fancy:fb_borderColor="#FFFFFF"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="#22a138"
+                fancy:fb_focusColor="#2ccf49"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="       START       "
+                fancy:fb_textSize = '16sp'
+                fancy:fb_textColor="#FFFFFF"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                fancy:fb_borderColor="#FFFFFF"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="#b4000c"
+                fancy:fb_focusColor="#e20004"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="        STOP        "
+                fancy:fb_textSize = '16sp'
+                fancy:fb_textColor="#FFFFFF"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_gravity="center_horizontal">
+
+        </LinearLayout>
 
     </LinearLayout>
+
 </FrameLayout>
