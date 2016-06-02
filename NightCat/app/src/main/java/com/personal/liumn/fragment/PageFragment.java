@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItem;
 import com.personal.liumn.nightcat.R;
@@ -29,8 +28,8 @@ public class PageFragment extends Fragment {
     {
         super.onViewCreated(view, savedInstanceState);
         int position = FragmentPagerItem.getPosition(getArguments());
-        TextView title = (TextView) view.findViewById(R.id.item_title);
-        title.setText(String.valueOf(position));
+        //TextView title = (TextView) view.findViewById(R.id.item_title);
+        //title.setText(String.valueOf(position));
     }
 
 

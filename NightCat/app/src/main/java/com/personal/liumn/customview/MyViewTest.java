@@ -12,6 +12,8 @@ import android.view.View;
 
 import com.personal.liumn.nightcat.R;
 
+import org.xutils.common.util.LogUtil;
+
 /**
  * TODO: document your custom view class.
  */
@@ -19,7 +21,7 @@ public class MyViewTest extends View
 {
     private String mExampleString; // TODO: use a default from R.string...
     private int mExampleColor = Color.RED; // TODO: use a default from R.color...
-    private float mExampleDimension = 0; // TODO: use a default from R.dimen...
+    private float mExampleDimension = 20; // TODO: use a default from R.dimen...
     private Drawable mExampleDrawable;
 
     private TextPaint mTextPaint;
@@ -29,20 +31,24 @@ public class MyViewTest extends View
     public MyViewTest(Context context) {
         super(context);
         init(null, 0);
+        LogUtil.i("L>>>>>>>>>MyViewTest::MyViewTest()1");
     }
 
     public MyViewTest(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
+        LogUtil.i("L>>>>>>>>>MyViewTest::MyViewTest()2");
     }
 
     public MyViewTest(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
+        LogUtil.i("L>>>>>>>>>MyViewTest::MyViewTest()3");
     }
 
     private void init(AttributeSet attrs, int defStyle)
     {
+        LogUtil.i("L>>>>>>>>>MyViewTest::init()");
         // Load attributes
         final TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.MyViewTest, defStyle, 0);
 
@@ -80,6 +86,14 @@ public class MyViewTest extends View
         mTextHeight = fontMetrics.bottom;
     }
 
+    //@Override
+    //protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+    //}
+
+    //@Override
+    //protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+    //}
+
     @Override
     protected void onDraw(Canvas canvas)
     {
@@ -95,6 +109,7 @@ public class MyViewTest extends View
         int contentWidth = getWidth() - paddingLeft - paddingRight;
         int contentHeight = getHeight() - paddingTop - paddingBottom;
 
+        LogUtil.i("L>>>>>>>>>onDraw():contentWidth="+contentWidth+",contentHeight="+contentHeight+",mTextWidth="+mTextWidth+",mTextHeight="+mTextHeight);
         // Draw the text.
         canvas.drawText(mExampleString,
                 paddingLeft + (contentWidth - mTextWidth) / 2,
